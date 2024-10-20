@@ -1,0 +1,458 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(186, 199, 211);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* header */
+#section1{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 14vh;
+    box-shadow: 0px 4px 2px 1px grey;
+    position: fixed;
+    top: 0%;
+}
+
+
+
+#menu> nav> ul> a> li> img{
+    width: 3.8em;
+    margin: 0%;
+}
+#menu> nav> ul> a:hover{
+    box-shadow: 2px 2px 2px 2px grey;
+}
+#menu> nav> ul> a> #rrm> img{
+    width: 2.7em;
+    margin: 0.1%;
+}
+#menu> nav> ul> a> #yamaham> img{
+    width: 3em;
+    height: 2.8em;
+    margin: 0.1%;
+}
+#menu> nav> ul> a> #suzukim> img{
+    width: 3em;
+    height: 2.5em;
+    margin: 0.5%;
+}
+
+/* This is for icons nav bar */
+#nav2{
+    position: fixed;
+    left: 80%;
+    top: 0.2%;
+}
+#nav2> ul> a{
+    margin: 5%;
+}
+#nav2> ul> a:hover{
+    background-color: aliceblue;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav{
+    margin: 0.5%;
+    display: flex;
+    top: 18%;
+    position: absolute;
+    left: 40%;
+}
+a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    padding: 1%;
+}
+header>span>h2{
+    display: flex;
+    position: absolute;
+    left: 3%;
+    top: 10%;
+    font-size: xx-large;
+    text-shadow: 2px 2px 2px grey;
+}
+section>header>#menu>nav>ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    column-gap: 7%;
+    padding: 1%;
+}
+li{
+    list-style-type: none;
+    padding: 2%;
+    font-size: large;
+}
+#links{
+    background-color: blue;
+    border: 1px solid beige;
+}
+#forhomeimg{
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin-top: 6%;
+}
+#forhomeimg>img{
+    width: 95%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* detailed menu */
+.detail{
+    display: flex;
+    background-color: rgba(240, 255, 255, 0.774);
+    border: 20px;
+    top: 4.5rem;
+    right: 4%;
+    width: 45rem;
+    display: none;
+    padding: 10%;
+}
+#submenu{
+    margin-top: 4%;
+    font-size: 1em;
+}
+#submenu:hover #det{
+    display: flex;
+    opacity: 1;
+    position: absolute;
+    height: 65vh;
+} 
+.home{
+    margin-top: 5px;
+    font-size: larger;
+    font-weight: 700;
+}
+#bold{
+    font-size: larger;
+    font-weight: 700;
+}
+#det> ul> li{
+    margin: 25px;
+    margin-top: 20px;
+    padding: 1%;
+    font-size: small;
+}
+.detail> ul> li> a{
+    margin: 4%;
+    font-size: small;
+}
+.detail> ul> li> a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+/*section for bmw */
+#bmw{
+    width: 100%;
+    height: 600px;
+    background-color:  rgb(226, 226, 226);
+    top: 5%;
+    border-radius: 30px;
+}
+#bmwdiv1{
+    display: flex;
+    flex-direction: column;
+}
+#bmwdiv1>h1{
+    margin-top: 3%;
+    text-align: center;
+}
+#bmwchild1{
+    display: flex;
+    justify-content: space-evenly;
+}
+#bmwchild2{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    object-fit: cover;
+    font-size: larger;
+}
+#bmwchild2>div>img{
+    border-radius: 10px;
+}
+#bmwchild1>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+    font-size: larger;
+}
+
+/*section for mercedes */
+#mercedes{
+    width:100%;
+    background-color:  rgb(226, 226, 226);
+    border-radius: 20px;
+    height: 670px;
+    margin: 5%;
+    top: 10%;
+    color: black;
+}
+.mercedes1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+}
+.mercedes1>h1{
+    text-align: center;
+    margin-top: 1%;
+}
+.merdiv1, .merdiv2{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.mercedesimg{
+    width: 100%;
+    height:200px;
+    margin: 5%;
+    margin-top: 5%;
+    border-radius: 10px;
+}
+.merdiv1>div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    width: 30vw;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    margin: 2%;
+    margin-bottom: 0.5%;
+}
+.merdiv2>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30vw;
+    color: rgb(0, 0, 0);
+    font-size: larger;
+    margin: 2%;
+    margin-top: 0.5%;
+}
+
+/*section for rr */
+#rr{
+    width: 100%;
+    height: 600px;
+    background-color: rgb(226, 226, 226);
+    border-radius: 20px;
+}
+.mainrr>h1{
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 2%;
+    padding-bottom: 1%;
+}
+.mainrr{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.mainrr> .rr1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mainrr> .rr1>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0.1%;
+    margin: 3%;
+    font-size: larger;
+}
+.mainrr> div> div>a>img{
+    padding: 2%;
+    border-radius: 10px;
+}
+
+/*section for hamaha bike */
+#yamaha{
+    width: 100%;
+    height: 570px;
+    background-color:  rgb(226, 226, 226);
+    border-radius: 30px;
+}
+#ymhdiv>h1{
+    text-align: center;
+    padding: 2%;
+    padding-bottom: 1%;
+    color: black;
+}
+#ymhdiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#ymh1, #ymh2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#ymhdiv>div>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.1%;
+    margin: 3%;
+}
+.ymhdiv> div> div>img{
+    padding: 2%;
+    border-radius: 30px;
+}
+
+/*section for suzuki */
+#suzuki{
+    width: 100%;
+    height: 580px;
+    background-color:  rgb(226, 226, 226);
+    border-radius: 30px;
+    margin-top: 4%;
+}
+#mainsuzu>h1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 2%;
+    padding-bottom: 1%;
+    margin-bottom: 3%;
+}
+#mainsuzu{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#mainsuzu>div{
+    width: 80%;
+    height: 200px;
+    margin: 1%;
+}
+#suzu1, #suzu2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#suzu1>div, #suzu2>div{
+    width: 50%;
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    font-weight: 700;
+    margin-bottom: 4%;
+}
+#suzu1>div>a>img, #suzu2>div>a>img{
+    border-radius: 20px;
+}
+
+
+/* section for footer */
+#footer{
+    display: flex;
+    flex-direction: column;
+    width: 99vw;
+    background-color: rgb(66, 117, 119);
+    color: white;
+}
+.firstfoot{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.firstfoot> div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 15vw;
+    margin-top: 2rem;
+}
+.secondfoot{
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+}
+.footlist ul> li{
+    margin: 5%;
+    font-size: large;
+}
+.footlist{
+    height: 80%;
+}
+.footlist> ul> li:hover{
+    color: white;
+    text-decoration: underline;
+    font-size: larger;
+}
+#exp{
+    background-color: rgb(129, 180, 180);
+    height: 70%;
+    width: 25%;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+#expfirstid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#exp> #expfirstid> a> img{
+    width: 50%;
+    margin: 4%;
+    margin-left: 25%;
+    border-radius: 4px;
+}
+#exp> h5{
+    color: black;
+}
+.footlast{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color: rgb(219, 225, 230);
+    color: black;
+}

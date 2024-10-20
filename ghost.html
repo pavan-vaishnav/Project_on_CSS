@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>RR Ghost</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(233, 236, 238);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        /* header */
+        #section1{
+            display: flex;
+            justify-content: center;
+            background-color: rgb(255, 255, 255);
+            width: 100vw;
+            height: 15vh;
+            box-shadow: 0px 4px 2px 1px grey;
+            position: fixed;
+            top: 0%;
+        }
+        header{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        
+#menu> nav> ul> a> li> img{
+    width: 3.8em;
+    margin: 0%;
+}
+#menu> nav> ul> a:hover{
+    box-shadow: 2px 2px 2px 2px grey;
+}
+#menu> nav> ul> a> #rrm> img{
+    width: 2.7em;
+    margin: 0.1%;
+}
+#menu> nav> ul> a> #yamaham> img{
+    width: 3em;
+    height: 2.8em;
+    margin: 0.1%;
+}
+#menu> nav> ul> a> #suzukim> img{
+    width: 3em;
+    height: 2.5em;
+    margin: 0.5%;
+}
+
+/* detailed menu */
+.detail{
+    display: flex;
+    background-color: rgba(240, 255, 255, 0.774);
+    border: 20px;
+    top: 4.5rem;
+    right: 4%;
+    width: 45rem;
+    display: none;
+    padding: 10%;
+}
+#submenu{
+    margin-top: 4%;
+    font-size: 1em;
+}
+#submenu:hover #det{
+    display: flex;
+    opacity: 1;
+    position: absolute;
+    height: 65vh;
+} 
+.home{
+    margin-top: 5px;
+    font-size: larger;
+    font-weight: 700;
+}
+#bold{
+    font-size: larger;
+    font-weight: 700;
+}
+#det> ul> li{
+    margin: 25px;
+    margin-top: 20px;
+    padding: 1%;
+    font-size: small;
+}
+.detail> ul> li> a{
+    margin: 4%;
+    font-size: small;
+}
+.detail> ul> li> a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+/* This is for icons nav bar */
+#nav2{
+    position: fixed;
+    left: 80%;
+    top: 0.2%;
+}
+#nav2> ul> a{
+    margin: 5%;
+}
+#nav2> ul> a:hover{
+    background-color: aliceblue;
+    box-shadow: 2px 2px 2px 2px grey;
+}
+        
+        nav{
+            margin: 1%;
+            display: flex;
+            flex-wrap: wrap;
+            top: 18%;
+            position: absolute;
+            left: 40%;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: larger;
+            padding: 1%;
+        }
+        header>span>h2{
+            display: flex;
+            flex-wrap: wrap;
+            position: absolute;
+            left: 3%;
+            top: 10%;
+            font-size: xx-large;
+            text-shadow: 2px 2px 2px grey;
+        }
+        section>header>#menu>nav>ul{
+            display: flex;
+            list-style-type: none;
+            justify-content: center;
+            column-gap: 7%;
+            padding: 1%;
+        }
+        li{
+            list-style-type: none;
+            padding: 2%;
+            font-size: large;
+        }
+        #links{
+            background-color: blue;
+            border: 1px solid beige;
+        }
+        #forhomeimg{
+            width: 100vw;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+        }
+        #forhomeimg>img{
+            width: 95%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+        
+
+        /* section for subdivs for indivizual models for particular brand */
+        .sectionx1{
+            width: 100%;
+            height: 500px;
+            background-color: rgb(233, 236, 238);
+            border:1px solid grey;
+            margin-top: 1%;
+            padding: 5%;
+        }
+        .photoprice{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        .sectionx1> .photoprice > div{
+            width: 40%;
+            margin: 1%;
+            height: 450px;
+            background-color: rgb(233, 236, 238);
+            display: flex;
+        }
+        .photoprice> div> img{
+            width: 100%;
+            height: 100%;
+            box-shadow: 2px 2px 2px 2px grey;
+        }
+        #info{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: start;
+            align-items: start;
+            padding: 4%;
+        }
+        #info> p , #info> h3{
+            margin: 1%;
+        }
+        .foroffer> span> button{
+            background-color: rgb(235, 177, 30);
+            padding: 1%;
+            font-size: larger;
+            width: 15em;
+            margin: 1%;
+            color: rgb(0, 0, 0);
+            border: 1px solid goldenrod;
+            border-radius: 10px;
+            box-shadow: 1px 2px 2px 1px rgb(153, 153, 86);
+        }
+        .foroffer> span> button:hover{
+            background-color: gold;
+        }
+
+        .completeinfo{
+            width: 100%;
+            padding: 5%;
+            background-color: aliceblue;
+        }
+        .completeinfo> h3{
+            margin: 2% 2% 2% 0%;
+        }
+        .variants{
+            display: flex;
+        }
+        table{
+            margin: 1%;
+            width: 40%;
+            background-color: rgb(255, 255, 255);
+        }
+        .fueltype{
+            padding: 0.7%;
+            margin: 1%;
+            font-size: larger;
+        }
+        .fueltype:hover{
+            background-color: rgb(231, 179, 110);
+        }
+        th, td{
+            padding: 2%;
+            border: 1px solid grey;
+        }
+
+    </style>
+  </head>
+  <body>
+    
+    <section id="section1">
+        <header>
+            <span id="name"><h2>Pavan Vaishnav</h2></span>
+            <span id="menu">
+                <nav>
+                    <ul>
+                        <a href="index.html#bmw"><li id="bmwm"> <img src="bmwlogo.png"></li></a>
+                        <a href="index.html#mercedes"><li id="merm"> <img src="merlogo.jpeg"></li></a>
+                        <a href="index.html#rr"><li id="rrm"> <img src="rrlogo.jpeg"></li></a>
+                        <a href="index.html#yamaha"><li id="yamaham"> <img src="yamahalogo.jpeg"></li></a>
+                        <a href="index.html#suzuki"><li id="suzukim"> <img src="suzulogo.jpeg"></li></a>
+                    </ul>
+                </nav>
+                <nav id="nav2">
+                    <ul>
+                      <a href="#"> <li id="submenu" class="navv2"> &nbsp;&nbsp;<i class="bi bi-card-text">Menu</i> 
+                      <div class="detail" id="det">
+                        <ul>
+                          <li><a href="index.html" id="bold" class="home">Home</a></li>
+                          <li><a href="Aboutus.html" id="bold">About Us</a></li>
+                          <li><a href="#bmw" id="bold">BMW</a></li>
+                          <li><a href="#mercedes" id="bold">MERCEDES</a></li>
+                          <li><a href="#rr" id="bold">ROLLS-ROYCE</a></li>
+                          <li><a href="#yamaha" id="bold">YAMAHA</a></li>
+                          <li><a href="#suzuki" id="bold">SUZUKI</a></li>
+                        </ul>
+                        <ul>
+                          <li> <a href="index.html" id="bold"> BMW </a></li>
+                          <li> <a href="bmwx1.html"> BMW X1 </a></li>
+                          <li> <a href="bmwx3.html"> BMW X3 </a></li>
+                          <li> <a href="bmwx5.html"> BMW X5 </a></li>
+                          <li> <a href="bmwg3.html"> BMW G310rr </a></li>
+                          <li> <a href="bmwm1.html"> BMW M1000 </a></li>
+                        </ul>
+                        <ul>
+                          <li> <a href="index.html" id="bold"> Mercedes</a> </li>
+                          <li> <a href="merAMG.html"> Mercedes AMG</a> </li>
+                          <li> <a href="sclass.html"> BENZ S-Class</a> </li>
+                          <li> <a href="sedan.html"> Maybach Sedan</a> </li>
+                          <li> <a href="gls.html"> Maybach GLS</a> </li>
+                        </ul>
+                        <ul>
+                          <li> <a href="index.html" id="bold"> Rolls-Royce</a></li>
+                          <li> <a href="phantom.html"> RR Phantom</a></li>
+                          <li> <a href="wraith.html"> RR Wraith</a></li>
+                          <li> <a href="ghost.html"> RR Ghost</a></li>
+                          <li> <a href="cullinun.html"> RR Cullinun</a></li>
+                          <li> <a href="spectre.html"> RR Specture</a></li>
+                          <li> <a href="boattail.html"> RR Boat Tail</a></li>
+                        </ul>
+                        <ul>
+                          <li> <a href="index.html" id="bold"> YAMAHA</a></li>
+                          <li> <a href="aerox.html"> Aerox 155</a></li>
+                          <li> <a href="fzv3.html"> Fz V3</a></li>
+                          <li> <a href="yzfr1.html"> Yzf R1</a></li>
+                          <li> <a href="mt15.html"> Mt 15</a></li>
+                          <li> <a href="fzx.html"> Fz X</a></li>
+                          <li> <a href="rx100.html"> RX100</a></li>
+                        </ul>
+                        <ul>
+                          <li><a href="index.html" id="bold">SUZUKI</a></li>
+                          <li><a href="gixxer.html">Gixxer</a></li>
+                          <li><a href="hayabusa.html">Hayabusa</a></li>
+                          <li><a href="access.html">Access 125</a></li>
+                          <li><a href="gixxer250.html">Gixxer 250</a></li>
+                          <li><a href="gsx.html">GSX-R1000R</a></li>
+                          <li><a href="avenis.html">Avenis 125</a></li>
+                        </ul>
+                      </div>
+                      </li></a>
+                      <a href="index.html"> <li id="Home" class="navv2"> &nbsp;&nbsp; <i class="bi bi-house-fill">Home</i> </li></a>
+                      <a href="#"> <li id="aboutus" class="navv2"> &nbsp;&nbsp; <i class="bi bi-app-indicator">About</i> </li></a>
+                    </ul>
+                  </nav>
+            </span>
+        </header>
+    </section>
+
+    <!-- indivizual section for only bmw cars  -->
+     <!-- this section for bmw x1 -->
+    <section class="sectionx1" id="sectionforx1">
+        <div class="photoprice">
+            <div> <img src="ghost.jpeg"> </div>
+            <div id="info">
+                <h3>RR Ghost</h3>
+                <p> The Rolls-Royce Ghost is a full-size luxury sedan known for its opulence, advanced technology, and powerful performance. It is positioned above the Wraith in the Rolls-Royce lineup.</p>
+                <h3>Rs 3.32. crore</h3>
+                <p>Ex-showroom price, India</p>
+                <br>
+                <p>Avg, Waiting Period Upto 40 Weeks</p>
+                <div class="foroffer">
+                    <span><button>Get Diwali Offers</button></span>
+                    <span><button>Get EMI Offers</button></span>
+                    <span><button>View more</button></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="completeinfo">
+            <h3>RR Ghost</h3>
+            <p>The Rolls-Royce Ghost is a pinnacle of luxury and performance, appealing to those who desire an unmatched driving experience combined with exquisite craftsmanship
+                The Ghost stands out for its combination of luxury, performance, and customization, making it a popular choice among luxury car enthusiasts.</p>
+            <div class="fuel">
+                <button class="fueltype">Petrol</button>
+                <!-- <button class="fueltype">Diesel</button> -->
+            </div>
+            <div class="variants">
+                <table>
+                    <tr>
+                        <th>Variants</th>
+                        <th>Ex-showroom Price</th>
+                    </tr>
+                    <tr>
+                        <td>Standard Ghost</td>
+                        <td style="font-weight: 700;"> ₹3.32 crore*</td>
+                    </tr>
+                    <tr>
+                        <td>Ghost Black Badge</td>
+                        <td style="font-weight: 700;"> ₹3.75 crore*</td>
+                    </tr>
+                    <tr>
+                        <td>Ghost Standard Wheelbase</td>
+                        <td style="font-weight: 700;"> ₹3.54 crore*</td>
+                    </tr>
+                </table>
+                <table class="tableinfo" border="1" >
+                    <tr>
+                        <th>Form</th>
+                        <th>Specification</th>
+                    </tr>
+                    <tr>
+                        <td>Engine</td>
+                        <td>  6.75-liter V12 twin-turbocharged engine.</td>
+                    </tr>
+                    <tr>
+                        <td>Power</td>
+                        <td>563 horsepower </td>
+                    </tr>
+                    <tr>
+                        <td>Engine Torque</td>
+                        <td>627 lb-ft of torque.</td>
+                    </tr>
+                    <tr>
+                        <td>Seating capacity</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Body type</td>
+                        <td>Sedan</td>
+                    </tr>
+                    <tr>
+                        <td>Interior</td>
+                        <td>Starlight Headline, Bespoke Design, Luxury Materials, Rear Seat Comfort, Noise Insulation.</td>
+                    </tr>
+                    <tr>
+                        <td>Digital features</td>
+                        <td>Smartphone integration, Apple CarPlay and Android Auto</td>
+                    </tr>
+                    <tr>
+                        <td>Driver assistance systems</td>
+                        <td>Lane departure warning, active, feedback, front collision warning with brake intervention</td>
+                    </tr>
+                </table> 
+            </div>
+        </div>
+    </section> <br>
+    
+     <!-- footer  -->
+    <section id="footer" style="position: absolute; top:1480px;">
+        <div class="firstfoot">
+          <div> <span><i class="bi bi-award"></i></span>  <h4>India's #1</h4>  <p>Best Auto</p></div>
+          <div> <span><i class="bi bi-receipt"></i></span>  <h4>Being Sold</h4>  <p>Every 4 min</p></div>
+          <div> <span><i class="bi bi-tags"></i></span>  <h4>Offers</h4>  <p>Stay updated</p></div>
+          <div> <span><i class="bi bi-car-front"></i></span>  <h4>Compare</h4>  <p>Decode car</p></div>
+        </div>
+
+        <div class="secondfoot">
+          <div class="footlist">
+            <ul>
+              <li><a href="#"><h5>About Website</h5></a></li>
+              <li><a href="#">Career with us</a></li>
+              <li><a href="#">Privacy & Policy</a></li>
+              <li><a href="#">FAQS</a></li>
+            </ul>
+          </div>
+          <div class="footlist">
+            <ul>
+              <li><a href="#"><h5>Connect</h5></a></li>
+              <li><a href="#">Feedback</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Advertise</a></li>
+              <li><a href="#">Become Partner</a></li>
+            </ul>
+          </div>
+          <div class="footlist">
+            <ul>
+              <li><a href="#"> <h5>Others</h5></a></li>
+              <li><a href="#">Truck</a></li>
+              <li><a href="#">Tractor</a></li>
+              <li><a href="#">Emergency</a></li>
+              <li><a href="#">Trends</a></li>
+            </ul>
+          </div>
+          <div class="footlist" id="exp">
+            <h5>Experience on</h5>
+            <div id="expfirstid">
+              <a> <img src="appstore.png"></a>
+              <a> <img src="playstore.png"></a>
+            </div>
+          </div>
+        </div>
+        <div class="footlast">
+          <div> <i class="bi bi-cc-circle-fill"></i>  Copyright VORTEX 2024</div>
+          <div>Connect :  &nbsp;  <a><i class="bi bi-facebook" style="color: blue;"></i></a> &nbsp;&nbsp;&nbsp; <a> <i class="bi bi-linkedin" style="color: rgb(10, 111, 243);"></i></a> &nbsp;&nbsp;&nbsp; <a> <i class="bi bi-twitter" style="color: rgb(3, 110, 172);"></i></a> &nbsp;&nbsp;&nbsp;  </div>
+        </div>
+       </section>  
+  </body>
+  </html>
