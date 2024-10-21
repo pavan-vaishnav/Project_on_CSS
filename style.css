@@ -120,7 +120,7 @@ li{
 /* detailed menu */
 .detail{
     display: flex;
-    background-color: rgba(240, 255, 255, 0.774);
+    background-color: rgb(240, 255, 255);
     border: 20px;
     top: 4.5rem;
     right: 4%;
