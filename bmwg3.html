@@ -198,6 +198,19 @@
             height: 100%;
             box-shadow: 2px 2px 2px 2px grey;
         }
+        .images{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .images> #imgdiv{
+            width: 50%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
         #info{
             display: flex;
             flex-direction: column;
@@ -340,7 +353,10 @@
      <!-- this section for bmw x1 -->
     <section class="sectionx1" id="sectionforx1">
         <div class="photoprice">
-            <div> <img src="bmwg3.jpeg"> </div>
+            <div class="images">
+                <div id="imgdiv"><img src="bmwg3.jpeg">    <img src="bmwg32.jpeg"></div>
+                <div id="imgdiv"><img src="bmwg33.jpeg">    <img src="bmwg34.jpeg"></div>   
+            </div>
             <div id="info">
                 <h3>BMW G 310 RR</h3>
                 <p>BMW G 310 RR Features

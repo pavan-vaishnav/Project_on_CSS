@@ -198,6 +198,19 @@
             height: 100%;
             box-shadow: 2px 2px 2px 2px grey;
         }
+        .images{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .images> #imgdiv{
+            width: 50%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
         #info{
             display: flex;
             flex-direction: column;
@@ -340,7 +353,10 @@
      <!-- this section for bmw x1 -->
     <section class="sectionx1" id="sectionforx1">
         <div class="photoprice">
-            <div> <img src="avenis.jpeg"> </div>
+            <div class="images">
+                <div id="imgdiv"><img src="avenis.jpeg">    <img src="avenis2.jpeg"></div>
+                <div id="imgdiv"><img src="avenis3.jpeg">    <img src="avenis4.jpeg"></div>   
+            </div>
             <div id="info">
                 <h3>Suzuki Avenis 125</h3>
                 <p> The Suzuki Avenis 125 combines sporty styling, modern features, and practicality, making it a great option for urban commuters who want both performance and convenience in a 125cc scooter.</p>

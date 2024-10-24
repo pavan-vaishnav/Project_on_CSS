@@ -197,6 +197,19 @@
             height: 100%;
             box-shadow: 2px 2px 2px 2px grey;
         }
+        .images{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .images> #imgdiv{
+            width: 50%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
         #info{
             display: flex;
             flex-direction: column;
@@ -339,8 +352,11 @@
      <!-- this section for bmw x1 -->
     <section class="sectionx1" id="sectionforx1">
         <div class="photoprice">
-            <div> <img src="bmwm1.jpeg"> </div>
-            <div id="info">
+            <div class="images">
+                <div id="imgdiv"><img src="bmwm1.jpeg">    <img src="bmwm12.jpeg"></div>
+                <div id="imgdiv"><img src="bmwm13.jpeg">    <img src="bmwm14.jpeg"></div>   
+            </div>           
+             <div id="info">
                 <h3>BMW M1000 RR</h3>
                 <p>BMW Motorrad has launched the much-awaited M 1000 RR in India in two variants: Standard and Competition. Prices start at Rs 42,00,000 (ex-showroom).</h3>
                 <p>Ex-showroom price, India</p>

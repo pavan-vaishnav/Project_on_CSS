@@ -198,6 +198,20 @@
             height: 100%;
             box-shadow: 2px 2px 2px 2px grey;
         }
+        
+        .images{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .images> #imgdiv{
+            width: 50%;
+            height: 50%;
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        }
         #info{
             display: flex;
             flex-direction: column;
@@ -340,7 +354,10 @@
      <!-- this section for bmw x1 -->
     <section class="sectionx1" id="sectionforx1">
         <div class="photoprice">
-            <div> <img src="arox.jpeg"> </div>
+            <div class="images"> 
+                <div id="imgdiv"><img src="aerox2.jpeg">    <img src="arox.jpeg"></div>
+                <div id="imgdiv"><img src="aerox3.jpeg">    <img src="aerox4.jpeg"></div>    
+            </div>
             <div id="info">
                 <h3>Yamaha Aerox 155</h3>
                 <p> The Yamaha Aerox 155 is a great choice for those looking for a powerful, feature-rich scooter with sporty styling and decent mileage. The Yamaha Aerox 155 offers an average mileage of around 40-45 km/l under normal riding conditions.</p>
