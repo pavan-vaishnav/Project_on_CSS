@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        *{
+            margin: 0;padding: 0;box-sizing: border-box;
+        }
+        body{
+            background-image: url("imgforhome.jpg");
+        }
+        #mainsection{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(240, 248, 255, 0.781);
+            width: 40%;
+            height: 440px;
+            position: absolute;
+            top: 20%;
+            border-radius: 20px;
+        }
+        .subdivofmain{
+            border: 1px solod black;
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        #formdiv> div> input{
+            padding: 5%;
+            font-weight: 700;
+            border: 1px solid grey;
+            border-radius: 10px;
+        }
+        #formdiv> div> input:hover{
+            background-color: rgb(194, 245, 247);
+        }
+        #signinbtn{
+            background-color: aliceblue;
+            border: 1px solid grey;
+            height: 40px;
+            width: 100px;
+            border-radius: 20px;
+            font-size: large;
+        }
+        #signinbtn:hover{
+            background-color: blue;
+            color: white;
+        }
+        #btn{
+            display: flex;
+            justify-content: center;
+        }
+        h1{
+            margin-top: 5%;
+        }
+    </style>
+  </head>
+  <body>
+    <section id="section1">
+        <header>
+          
+            <span id="name"><h2>Pavan Vaishnav</h2></span>
+            <span id="menu">
+                <nav>
+                    <ul>
+                        <a href="index.html#bmw"><li id="bmwm"><img src="bmwlogo.png"></li></a>
+                        <a href="index.html#mercedes"><li id="merm"> <img src="merlogo.jpeg"> </li></a>
+                        <a href="#rr"><li id="rrm"> <img src="rrlogo.jpeg"> </li></a>
+                        <a href="index.html#yamaha"><li id="yamaham"> <img src="yamahalogo.jpeg"> </li></a>
+                        <a href="index.html#suzuki"><li id="suzukim"> <img src="suzulogo.jpeg"> </li></a>
+                    </ul>
+                </nav>
+                <nav id="nav2">
+                  <ul>
+                    <a href="#"> <li id="submenu" class="navv2"> &nbsp;&nbsp;<i class="bi bi-card-text">Menu</i> 
+                    <div class="detail" id="det">
+                      <ul>
+                        <li><a href="index.html" id="bold" class="home">Home</a></li>
+                        <li><a href="Aboutus.html" id="bold">About Us</a></li>
+                        <li><a href="#bmw" id="bold">BMW</a></li>
+                        <li><a href="#mercedes" id="bold">MERCEDES</a></li>
+                        <li><a href="#rr" id="bold">ROLLS-ROYCE</a></li>
+                        <li><a href="#yamaha" id="bold">YAMAHA</a></li>
+                        <li><a href="#suzuki" id="bold">SUZUKI</a></li>
+                      </ul>
+                      <ul>
+                        <li> <a href="index.html" id="bold"> BMW </a></li>
+                        <li> <a href="bmwx1.html"> BMW X1 </a></li>
+                        <li> <a href="bmwx3.html"> BMW X3 </a></li>
+                        <li> <a href="bmwx5.html"> BMW X5 </a></li>
+                        <li> <a href="bmwg3.html"> BMW G310rr </a></li>
+                        <li> <a href="bmwm1.html"> BMW M1000 </a></li>
+                      </ul>
+                      <ul>
+                        <li> <a href="index.html" id="bold"> Mercedes</a> </li>
+                        <li> <a href="merAMG.html"> Mercedes AMG</a> </li>
+                        <li> <a href="sclass.html"> BENZ S-Class</a> </li>
+                        <li> <a href="sedan.html"> Maybach Sedan</a> </li>
+                        <li> <a href="gls.html"> Maybach GLS</a> </li>
+                      </ul>
+                      <ul>
+                        <li> <a href="index.html" id="bold"> Rolls-Royce</a></li>
+                        <li> <a href="phantom.html"> RR Phantom</a></li>
+                        <li> <a href="wraith.html"> RR Wraith</a></li>
+                        <li> <a href="ghost.html"> RR Ghost</a></li>
+                        <li> <a href="cullinun.html"> RR Cullinun</a></li>
+                        <li> <a href="spectre.html"> RR Spectre</a></li>
+                        <li> <a href="boattail.html"> RR Boat Tail</a></li>
+                      </ul>
+                      <ul>
+                        <li> <a href="index.html" id="bold"> YAMAHA</a></li>
+                        <li> <a href="aerox.html"> Aerox 155</a></li>
+                        <li> <a href="fzv3.html"> Fz V3</a></li>
+                        <li> <a href="yzfr1.html"> Yzf R1</a></li>
+                        <li> <a href="mt15.html"> Mt 15</a></li>
+                        <li> <a href="fzx.html"> Fz X</a></li>
+                        <li> <a href="rx100.html"> RX100</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="index.html" id="bold">SUZUKI</a></li>
+                        <li><a href="gixxer.html">Gixxer</a></li>
+                        <li><a href="hayabusa.html">Hayabusa</a></li>
+                        <li><a href="access.html">Access 125</a></li>
+                        <li><a href="gixxer250.html">Gixxer 250</a></li>
+                        <li><a href="gsx.html">GSX-R1000R</a></li>
+                        <li><a href="avenis.html">Avenis 125</a></li>
+                      </ul>
+                    </div>
+                    </li></a>
+                    <a href="index.html"> <li id="Home" class="navv2"> &nbsp;&nbsp; <i class="bi bi-house-fill">Home</i> </li></a>
+                    <a href="login.html"> <li id="aboutus" class="navv2"> &nbsp;&nbsp; <i class="bi bi-app-indicator">About</i> </li></a>
+                  </ul>
+                </nav>
+            </span>
+          </header>
+       </section><br>
+
+    <section id="mainsection">
+        <div class="subdivofmain" id="subdiv2">
+            <h1>Sign In?</h1><br><br><br>
+            <div id="formdiv">
+                <div>
+                    <input type="text" name="name" id="name" placeholder="&nbsp;&nbsp;&nbsp;Name">
+                </div><br>
+                <div>
+                    <input type="email" name="mail" id="mail" placeholder="&nbsp;&nbsp;&nbsp;Email">
+                </div><br>
+                <div>
+                    <input type="number" name="ph" id="ph" placeholder="&nbsp;&nbsp;&nbsp;Phone No.">
+                </div><br>
+                <div>
+                    <input type="password" name="pass" id="pass" placeholder="&nbsp;&nbsp;&nbsp;Password">
+                </div> <br>
+                <div id="btn">
+                    <a href="index.html"><button id="signinbtn">Sign IN</button></a> &nbsp;&nbsp;
+                    <a href="login.html"><button id="signinbtn">Login</button></a>
+                </div><br>
+            </div>
+            <h4>Sign In via</h4><br>
+            <div id="via">
+                <a><i class="bi bi-facebook" style="color: blue;"></i></a> &nbsp;&nbsp;&nbsp; <a> <i class="bi bi-linkedin" style="color: rgb(10, 111, 243);"></i></a> &nbsp;&nbsp;&nbsp; <a> <i class="bi bi-twitter" style="color: rgb(3, 110, 172);"></i></a> &nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+    </section>
+  </body>
+</html>

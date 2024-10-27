@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("imgforhome.jpg");
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #loginsection{
+            margin-top: 7%;
+            background-color: rgba(240, 248, 255, 0.651);
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items:center;
+            width: 30%;
+            border-radius: 20px;
+            height: 55vh;
+        }
+        #logindiv{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        h1{
+            text-align: center;
+            position: relative;
+            bottom:8%;
+            font-size: 1.7em;
+            margin-top: 2%;
+        }
+        #inputname{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+        #inputname> input{
+            border: 1px solid grey;
+            padding-top: 7%;
+            padding-bottom: 7%;
+            border-radius: 10px;
+            background-color: aliceblue;
+        }
+        #inputname> label> i{
+            font-size: larger;
+        }
+        #btns> a{
+            background-color: beige;
+            border: 1px solid grey;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 20px;
+            background-color: aliceblue;
+            color: rgb(0, 0, 0);
+            font-weight: 400;
+        }
+        #btns> a:hover{
+            background-color: blue;
+            text-decoration: underline;
+            color: white;
+        }
+        #orbtn{
+            border-radius: 40px;
+        }
+        #orbtn> button{
+            padding: 5px;
+            border-radius: 40px;
+            border: 1px solid grey;
+            margin-bottom:20%;
+        }
+        #loginfb{
+            width: 100%;
+        }
+        #loginfb> a{
+            background-color: rgb(0, 119, 255);
+            text-decoration: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .btn-primary{
+            height: 40px;
+            padding: 2%;
+            background-color: rgb(0, 89, 255);
+            color: white;
+            font-size: larger;
+            border: 1px solid grey;
+            display: flex;
+            border-radius: 20px;
+            justify-content: center;
+            align-content: center;
+            text-align: center;
+        }
+        
+        .btn-primary:hover{
+            box-shadow: 1px 2px 2px 1px grey;
+        }
+        .bi-facebook{
+            padding: 2%;
+            border-radius: 10px;
+        }
+    </style>
+  </head>
+  <body>
+    <section id="section1">
+        <header>
+          
+            <span id="name"><h2>Pavan Vaishnav</h2></span>
+            <span id="menu">
+                <nav>
+                    <ul>
+                        <a href="index.html#bmw"><li id="bmwm"><img src="bmwlogo.png"></li></a>
+                        <a href="index.html#mercedes"><li id="merm"> <img src="merlogo.jpeg"> </li></a>
+                        <a href="#rr"><li id="rrm"> <img src="rrlogo.jpeg"> </li></a>
+                        <a href="index.html#yamaha"><li id="yamaham"> <img src="yamahalogo.jpeg"> </li></a>
+                        <a href="index.html#suzuki"><li id="suzukim"> <img src="suzulogo.jpeg"> </li></a>
+                    </ul>
+                </nav>
+                <nav id="nav2">
+                  <ul>
+                    <a href="#"> <li id="submenu" class="navv2"> &nbsp;&nbsp;<i class="bi bi-card-text">Menu</i> 
+                    <div class="detail" id="det">
+                      <ul>
+                        <li><a href="index.html" id="bold" class="home">Home</a></li>
+                        <li><a href="Aboutus.html" id="bold">About Us</a></li>
+                        <li><a href="#bmw" id="bold">BMW</a></li>
+                        <li><a href="#mercedes" id="bold">MERCEDES</a></li>
+                        <li><a href="#rr" id="bold">ROLLS-ROYCE</a></li>
+                        <li><a href="#yamaha" id="bold">YAMAHA</a></li>
+                        <li><a href="#suzuki" id="bold">SUZUKI</a></li>
+                      </ul>
+                      <ul>
+                        <li> <a href="index.html" id="bold"> BMW </a></li>
+                        <li> <a href="bmwx1.html"> BMW X1 </a></li>
+                        <li> <a href="bmwx3.html"> BMW X3 </a></li>
+                        <li> <a href="bmwx5.html"> BMW X5 </a></li>
+                        <li> <a href="bmwg3.html"> BMW G310rr </a></li>
+                        <li> <a href="bmwm1.html"> BMW M1000 </a></li>
+                      </ul>
+                      <ul>
+                        <li> <a href="index.html" id="bold"> Mercedes</a> </li>
+                        <li> <a href="merAMG.html"> Mercedes AMG</a> </li>
+                        <li> <a href="sclass.html"> BENZ S-Class</a> </li>
+                        <li> <a href="sedan.html"> Maybach Sedan</a> </li>
+                        <li> <a href="gls.html"> Maybach GLS</a> </li>
+                      </ul>
+                      <ul>
+                        <li> <a href="index.html" id="bold"> Rolls-Royce</a></li>
+                        <li> <a href="phantom.html"> RR Phantom</a></li>
+                        <li> <a href="wraith.html"> RR Wraith</a></li>
+                        <li> <a href="ghost.html"> RR Ghost</a></li>
+                        <li> <a href="cullinun.html"> RR Cullinun</a></li>
+                        <li> <a href="spectre.html"> RR Spectre</a></li>
+                        <li> <a href="boattail.html"> RR Boat Tail</a></li>
+                      </ul>
+                      <ul>
+                        <li> <a href="index.html" id="bold"> YAMAHA</a></li>
+                        <li> <a href="aerox.html"> Aerox 155</a></li>
+                        <li> <a href="fzv3.html"> Fz V3</a></li>
+                        <li> <a href="yzfr1.html"> Yzf R1</a></li>
+                        <li> <a href="mt15.html"> Mt 15</a></li>
+                        <li> <a href="fzx.html"> Fz X</a></li>
+                        <li> <a href="rx100.html"> RX100</a></li>
+                      </ul>
+                      <ul>
+                        <li><a href="index.html" id="bold">SUZUKI</a></li>
+                        <li><a href="gixxer.html">Gixxer</a></li>
+                        <li><a href="hayabusa.html">Hayabusa</a></li>
+                        <li><a href="access.html">Access 125</a></li>
+                        <li><a href="gixxer250.html">Gixxer 250</a></li>
+                        <li><a href="gsx.html">GSX-R1000R</a></li>
+                        <li><a href="avenis.html">Avenis 125</a></li>
+                      </ul>
+                    </div>
+                    </li></a>
+                    <a href="index.html"> <li id="Home" class="navv2"> &nbsp;&nbsp; <i class="bi bi-house-fill">Home</i> </li></a>
+                    <a href="login.html"> <li id="aboutus" class="navv2"> &nbsp;&nbsp; <i class="bi bi-app-indicator">About</i> </li></a>
+                  </ul>
+                </nav>
+            </span>
+          </header>
+       </section><br>
+
+    <section id="loginsection">
+        <div id="logindiv">
+            <h1>Login</h1>
+            <div id="inputname">
+                <label for="username"> <i class="bi bi-key-fill"></i></label> &nbsp;&nbsp;&nbsp; 
+                <input type="text" name="name" id="username" placeholder=" &nbsp;&nbsp; Username">
+            </div><br>
+            <div id="inputname">
+                <label for="pass"> <i class="bi bi-person-video"></i> </label> &nbsp;&nbsp;&nbsp; 
+                <input type="password" name="pass" id="pass" placeholder=" &nbsp;&nbsp; Password">
+            </div><br>
+            <div id="btns"> 
+                <a href="index.html">Login</a>
+                <a href="singin.html">Sign in?</a>
+            </div><br>
+            <div id="orbtn">
+                <button id="orbtn">OR</button><br>
+            </div>
+            <div id="loginfb">
+                <!-- login with fb -->
+                 <a href="#" id="suba"><button class="btn btn-primary" onclick="fbLogin()"> &nbsp;&nbsp;&nbsp;  <a><i class="bi bi-facebook" style="color: white;"></i></a> &nbsp;&nbsp;&nbsp;   Login with Facebook  &nbsp;&nbsp;&nbsp;</button></a>
+            </div>
+        </div>
+    </section>
+  </body>
+</html>

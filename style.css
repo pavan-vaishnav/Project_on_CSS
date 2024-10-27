@@ -457,3 +457,31 @@ li{
     background-color: rgb(219, 225, 230);
     color: black;
 }
+
+
+
+/* adding some text on main img */
+#text{
+    display: flex;
+    height: 150px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Times New Roman', Times, serif;
+    position: absolute;
+    background-color: rgba(45, 82, 116, 0.363);
+    padding: 10px;
+    top: 25%;
+    font-size: 2em;
+    color: whitesmoke;
+}
+#text> h2{
+    font: 5em;
+    margin-bottom: 5%;
+}
+#text> p{
+    background-color: rgba(240, 255, 255, 0.555);
+    color: black;
+    padding: 5px;
+    
+}
