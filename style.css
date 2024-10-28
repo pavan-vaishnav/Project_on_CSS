@@ -21,6 +21,7 @@ body{
     box-shadow: 0px 4px 2px 1px grey;
     position: fixed;
     top: 0%;
+    z-index: 10;
 }
 
 
