@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Yamaha FZ V3 155</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         *{
@@ -15,161 +18,10 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+            font-family: "Poppins";
         }
         
-        /* header */
-        #section1{
-            display: flex;
-            justify-content: center;
-            background-color: rgb(255, 255, 255);
-            width: 100vw;
-            height: 15vh;
-            box-shadow: 0px 4px 2px 1px grey;
-            position: fixed;
-            top: 0%;
-        }
-        header{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-
         
-#menu> nav> ul> a> li> img{
-    width: 3.8em;
-    margin: 0%;
-}
-#menu> nav> ul> a:hover{
-    box-shadow: 2px 2px 2px 2px grey;
-}
-#menu> nav> ul> a> #rrm> img{
-    width: 2.7em;
-    margin: 0.1%;
-}
-#menu> nav> ul> a> #yamaham> img{
-    width: 3em;
-    height: 2.8em;
-    margin: 0.1%;
-}
-#menu> nav> ul> a> #suzukim> img{
-    width: 3em;
-    height: 2.5em;
-    margin: 0.5%;
-}
-
-/* detailed menu */
-.detail{
-    display: flex;
-    background-color: rgba(240, 255, 255, 0.774);
-    border: 20px;
-    top: 4.5rem;
-    right: 4%;
-    width: 45rem;
-    display: none;
-    padding: 10%;
-}
-#submenu{
-    margin-top: 4%;
-    font-size: 1em;
-}
-#submenu:hover #det{
-    display: flex;
-    opacity: 1;
-    position: absolute;
-    height: 65vh;
-} 
-.home{
-    margin-top: 5px;
-    font-size: larger;
-    font-weight: 700;
-}
-#bold{
-    font-size: larger;
-    font-weight: 700;
-}
-#det> ul> li{
-    margin: 25px;
-    margin-top: 20px;
-    padding: 1%;
-    font-size: small;
-}
-.detail> ul> li> a{
-    margin: 4%;
-    font-size: small;
-}
-.detail> ul> li> a:hover{
-    text-decoration: underline;
-    color: blue;
-}
-
-/* This is for icons nav bar */
-#nav2{
-    position: fixed;
-    left: 80%;
-    top: 0.2%;
-}
-#nav2> ul> a{
-    margin: 5%;
-}
-#nav2> ul> a:hover{
-    background-color: aliceblue;
-    box-shadow: 2px 2px 2px 2px grey;
-}
-        
-        nav{
-            margin: 1%;
-            display: flex;
-            flex-wrap: wrap;
-            top: 18%;
-            position: absolute;
-            left: 40%;
-        }
-        a{
-            text-decoration: none;
-            color: black;
-            font-size: larger;
-            padding: 1%;
-        }
-        header>span>h2{
-            display: flex;
-            flex-wrap: wrap;
-            position: absolute;
-            left: 3%;
-            top: 10%;
-            font-size: xx-large;
-            text-shadow: 2px 2px 2px grey;
-        }
-        section>header>#menu>nav>ul{
-            display: flex;
-            list-style-type: none;
-            justify-content: center;
-            column-gap: 7%;
-            padding: 1%;
-        }
-        li{
-            list-style-type: none;
-            padding: 2%;
-            font-size: large;
-        }
-        #links{
-            background-color: blue;
-            border: 1px solid beige;
-        }
-        #forhomeimg{
-            width: 100vw;
-            height: 500px;
-            display: flex;
-            justify-content: center;
-        }
-        #forhomeimg>img{
-            width: 95%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 20px;
-        }
-        
-
         /* section for subdivs for indivizual models for particular brand */
         .sectionx1{
             width: 100%;
@@ -206,8 +58,8 @@
             align-items: start;
             padding: 4%;
         }
-        #info> p , #info> h3{
-            margin: 1%;
+        #info> p , #info> h4{
+            margin: 0%;
         }
         .foroffer> span> button{
             background-color: rgb(235, 177, 30);
@@ -229,7 +81,7 @@
             padding: 5%;
             background-color: aliceblue;
         }
-        .completeinfo> h3{
+        .completeinfo> h4{
             margin: 2% 2% 2% 0%;
         }
         .variants{
@@ -260,81 +112,148 @@
     
     <section id="section1">
         <header>
+          
             <span id="name"><h2>Pavan Vaishnav</h2></span>
             <span id="menu">
                 <nav>
-                    <ul>
-                        <a href="index.html#bmw"><li id="bmwm"> <img src="bmwlogo.png"></li></a>
-                        <a href="index.html#mercedes"><li id="merm"> <img src="merlogo.jpeg"></li></a>
-                        <a href="index.html#rr"><li id="rrm"> <img src="rrlogo.jpeg"></li></a>
-                        <a href="index.html#yamaha"><li id="yamaham"> <img src="yamahalogo.jpeg"></li></a>
-                        <a href="index.html#suzuki"><li id="suzukim"> <img src="suzulogo.jpeg"></li></a>
-                    </ul>
+                  <ul>
+                    <a href="index.html#bmw"><li id="bmwm"><img src="bmwlogo.png"></li></a>
+                    <a href="index.html#mercedes"><li id="merm"> <img src="merlogo.jpeg"> </li></a>
+                    <a href="index.html#rr"><li id="rrm"> <img src="rrlogo.jpeg"> </li></a>
+                    <a href="index.html#yamaha"><li id="yamaham"> <img src="yamahalogo.jpeg"> </li></a>
+                    <a href="index.html#suzuki"><li id="suzukim"> <img src="suzulogo.jpeg"> </li></a>                        
+                </ul>
+                </nav>
+                <nav>
+                  <ul>
+                    <!-- this is added for to add service  option for coustomer-->
+                     <li id="serviceid">&nbsp;&nbsp; <i class="bi bi-gear-fill"> <br> Service</i>
+                      <div class="form" id="formforservice">
+                        <h1 style="color:white; background-color:grey;" align="center">Register for Service</h1>
+                        <form>
+                            <div class="maindiv" id="personal">
+                                <!-- coustomer info -->
+                             <h4 style="margin-bottom: 10px;">Coustmer Information</h4>
+                             <div id="forname" class="ser">
+                                 <input type="text" name="fname" id="fnameid" placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; First name">
+                                 <input type="text" name="lname" id="lnameid" placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; Last name">
+                             </div>
+                             <div id="noemail" class="ser">
+                                 <input type="number" name="phno" id="phnoid" placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; Phone No.">
+                                 <input type="email" name="mail" id="mailid" placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; Email">
+                             </div>
+                             <div id="add" class="ser">
+                                 <textarea name="add" id="addid" cols="50" rows="5" placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; Address"></textarea>
+                             </div>
+                             <div id="reset">
+                                <input type="reset" value="Re-Fill">
+                             </div>
+                            </div>
+                
+                            <div class="maindiv" id="mainvehicle">
+                                <!-- vehicle info -->
+                             <h4>Vehicle Information</h4>
+                             <div id="vehicle" class="ser">
+                                 <input type="text" name="carname" id="carnameid" placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; Model Name">
+                                 <input type="number" name="carno" id="carnoid"  placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; Car No.">
+                             </div>
+                             <div id="todo" class="ser">
+                                 <textarea name="todoclass" id="todoid" cols="50" rows="5" placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; Add you modifications?"></textarea>
+                             </div>
+                             <div id="inout" class="ser">
+                                <div>
+                                    <label>Car Insert Date</label>
+                                    <input type="date" name="indate" id="indateid">
+                                </div>
+                                <div>
+                                    <label>Car Out Date</label>
+                                    <input type="date" name="outdate" id="outdateid">
+                                </div>
+                             </div>
+                             <div>
+                                <a href="index.html" class="btn"><button >Submit</button></a>
+                            </div>
+                            </div>
+                            
+                        </form>
+                      </div>
+                    
+                    </li>
+                  </ul>
                 </nav>
                 <nav id="nav2">
-                    <ul>
-                      <a href="#"> <li id="submenu" class="navv2"> &nbsp;&nbsp;<i class="bi bi-card-text">Menu</i> 
-                      <div class="detail" id="det">
-                        <ul>
-                          <li><a href="index.html" id="bold" class="home">Home</a></li>
-                          <li><a href="Aboutus.html" id="bold">About Us</a></li>
-                          <li><a href="#bmw" id="bold">BMW</a></li>
-                          <li><a href="#mercedes" id="bold">MERCEDES</a></li>
-                          <li><a href="#rr" id="bold">ROLLS-ROYCE</a></li>
-                          <li><a href="#yamaha" id="bold">YAMAHA</a></li>
-                          <li><a href="#suzuki" id="bold">SUZUKI</a></li>
-                        </ul>
-                        <ul>
-                          <li> <a href="index.html" id="bold"> BMW </a></li>
-                          <li> <a href="bmwx1.html"> BMW X1 </a></li>
-                          <li> <a href="bmwx3.html"> BMW X3 </a></li>
-                          <li> <a href="bmwx5.html"> BMW X5 </a></li>
-                          <li> <a href="bmwg3.html"> BMW G310rr </a></li>
-                          <li> <a href="bmwm1.html"> BMW M1000 </a></li>
-                        </ul>
-                        <ul>
-                          <li> <a href="index.html" id="bold"> Mercedes</a> </li>
-                          <li> <a href="merAMG.html"> Mercedes AMG</a> </li>
-                          <li> <a href="sclass.html"> BENZ S-Class</a> </li>
-                          <li> <a href="sedan.html"> Maybach Sedan</a> </li>
-                          <li> <a href="gls.html"> Maybach GLS</a> </li>
-                        </ul>
-                        <ul>
-                          <li> <a href="index.html" id="bold"> Rolls-Royce</a></li>
-                          <li> <a href="phantom.html"> RR Phantom</a></li>
-                          <li> <a href="wraith.html"> RR Wraith</a></li>
-                          <li> <a href="ghost.html"> RR Ghost</a></li>
-                          <li> <a href="cullinun.html"> RR Cullinun</a></li>
-                          <li> <a href="spectre.html"> RR Specture</a></li>
-                          <li> <a href="boattail.html"> RR Boat Tail</a></li>
-                        </ul>
-                        <ul>
-                          <li> <a href="index.html" id="bold"> YAMAHA</a></li>
-                          <li> <a href="aerox.html"> Aerox 155</a></li>
-                          <li> <a href="fzv3.html"> Fz V3</a></li>
-                          <li> <a href="yzfr1.html"> Yzf R1</a></li>
-                          <li> <a href="mt15.html"> Mt 15</a></li>
-                          <li> <a href="fzx.html"> Fz X</a></li>
-                          <li> <a href="rx100.html"> RX100</a></li>
-                        </ul>
-                        <ul>
-                          <li><a href="index.html" id="bold">SUZUKI</a></li>
-                          <li><a href="gixxer.html">Gixxer</a></li>
-                          <li><a href="hayabusa.html">Hayabusa</a></li>
-                          <li><a href="access.html">Access 125</a></li>
-                          <li><a href="gixxer250.html">Gixxer 250</a></li>
-                          <li><a href="gsx.html">GSX-R1000R</a></li>
-                          <li><a href="avenis.html">Avenis 125</a></li>
-                        </ul>
-                      </div>
-                      </li></a>
-                      <a href="index.html"> <li id="Home" class="navv2"> &nbsp;&nbsp; <i class="bi bi-house-fill">Home</i> </li></a>
-                      <a href="#"> <li id="aboutus" class="navv2"> &nbsp;&nbsp; <i class="bi bi-app-indicator">About</i> </li></a>
-                    </ul>
-                  </nav>
+                  <ul>
+                    <a href="#"> <li id="submenu" class="navv2"> &nbsp;&nbsp;<i class="bi bi-card-text">Menu</i> 
+                    <div class="detail" id="det">
+                      <ul id="wheeloption">
+                        <li id="two"><a>TWO <br> WHEELER</a>
+                          <div>
+                            <ul id="twowheelopt">
+                              <ul id="forbmwbikes">
+                                <li id="headtagfortwo">BMW</li>
+                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="bmwg3.html"> BMW G 310rr</a> </li>
+                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="bmwm1.html">  BMW M1000</a> </li>
+                              </ul>
+                              <ul id="foryamahabikes">
+                                <li id="headtagfortwo">YAMAHA</li>
+                                <li id="menufortwo"> <a href="aerox.html"> AEROX 155 </a> </li>
+                                <li id="menufortwo"> <a href="fzv3.html"> FZ V3 </a> </li>
+                                <li id="menufortwo"> <a href="yzfr1.html"> YZF R1 </a> </li>
+                                <li id="menufortwo"> <a href="mt15.html"> MT15 </a> </li>
+                                <li id="menufortwo"> <a href="fzx.html"> FZ X </a> </li>
+                                <li id="menufortwo"> <a href="rx100.html"> RX100 </a> </li>
+                              </ul>
+                              <ul id="forsuzukibikes">
+                                <li id="headtagfortwo">SUZUKI</li>
+                                <li id="menufortwo"> <a href="gixxer.html"> GIXXER </a> </li>
+                                <li id="menufortwo"> <a href="hayabusa.html"> HAYABUSA </a> </li>
+                                <li id="menufortwo"> <a href="access.html"> ACCESS 125 </a> </li>
+                                <li id="menufortwo"> <a href="gixxer250.html"> GIXXER 250 </a> </li>
+                                <li id="menufortwo"> <a href="gsx.html"> GSX-R1000R </a> </li>
+                                <li id="menufortwo"> <a href="avenis.html"> AVENIS </a> </li>
+                              </ul>
+                            </ul>
+                          </div>
+                        </li>
+
+                        <li id="two"><a>FOUR <br> WHEELER</a>
+                          <div>
+                            <ul id="twowheelopt">
+                              <ul id="forbmwcars">
+                              <li id="headtagfortwo" class="paddbmw padd">BMW</li>
+                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="bmwx1.html"> BMW X1</a> </li>
+                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="bmwx3.html"> BMW X3</a> </li>
+                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="bmwx5.html"> BMW X5</a> </li>
+                              </ul>
+                              <ul id="formercedescars">
+                                <li id="headtagfortwo" class="paddmer padd">MERCEDES</li>
+                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="merAMG.html"> BENZ AMG</a> </li>
+                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="sclass.html"> BENZ S-CLASS</a> </li>
+                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="sedan.html"> MAYBACH SEDAN</a> </li>
+                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="gls.html"> MAYBACH GLS</a> </li>
+                              </ul>
+                              <ul id="forrrcars">
+                                <li id="headtagfortwo" class="padd paddrr">ROLLS-ROYCE</li>
+                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="phantom.html"> PHANTOM </a> </li>
+                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="wraith.html"> WRAITH </a> </li>
+                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="ghost.html"> GHOST </a> </li>
+                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="cullinun.html"> CULLINUN </a> </li>
+                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="spectre.html"> SPECTRE </a> </li>
+                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="boattail.html"> BOAT-TAIL </a> </li>
+                              </ul>
+                            </ul>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                    </li></a>
+                    <a href="index.html"> <li id="Home" class="navv2"> &nbsp;&nbsp; <i class="bi bi-house-fill">Home</i> </li></a>
+                    <a href="login.html"> <li id="aboutus" class="navv2"> &nbsp;&nbsp; <i class="bi bi-person-video">Login</i> </li></a>
+                  </ul>
+                </nav>
             </span>
-        </header>
-    </section>
+          </header>
+       </section><br>
 
     <!-- indivizual section for only bmw cars  -->
      <!-- this section for bmw x1 -->
@@ -345,11 +264,11 @@
                 <div id="imgdiv"><img src="fzv33.jpeg">    <img src="fzv34.jpeg"></div>   
             </div>             
             <div id="info">
-                <h3>Yamaha FZ V3</h3>
+                <h4>Yamaha FZ V3</h4>
                 <p> The bike offers a comfortable upright riding position and a well-padded seat, ideal for daily commuting.
                     It comes with a fully digital instrument cluster that displays speed, fuel level, trip meter, and more.
                     Telescopic front forks and a monoshock rear suspension ensure a balanced and smooth ride on different terrains.</p>
-                <h3>Rs 1.16 Lakh</h3>
+                <h4>Rs 1.16 Lakh</h4>
                 <p>Ex-showroom price, India</p>
                 <br>
                 <p>Avg. Waiting  Period: 1-2 months</p>
@@ -363,7 +282,7 @@
             </div>
         </div>
         <div class="completeinfo">
-            <h3>Yamaha FZ V3</h3>
+            <h4>Yamaha FZ V3</h4>
             <p>The Yamaha FZ V3 series is a popular choice for those looking for a stylish, comfortable, and fuel-efficient motorcycle with reliable performance and modern features.
             The FZ V3 has a muscular design with a bold fuel tank and sharp body panels, giving it an aggressive, streetfighter look.
             It features LED headlights and taillights, providing improved visibility and a modern aesthetic.
@@ -420,7 +339,7 @@
     </section> <br>
     
      <!-- footer  -->
-    <section id="footer" style="position: absolute; top:1300px;">
+    <section id="footer" style="position: absolute; top:1420px;">
         <div class="firstfoot">
           <div> <span><i class="bi bi-award"></i></span>  <h4>India's #1</h4>  <p>Best Auto</p></div>
           <div> <span><i class="bi bi-receipt"></i></span>  <h4>Being Sold</h4>  <p>Every 4 min</p></div>
