@@ -1,381 +1,639 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>RR Spectre</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-        }
-        body{
-            background-color: rgb(233, 236, 238);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            font-family: "Poppins";
-        }
-        
-        
-        /* section for subdivs for indivizual models for particular brand */
-        .sectionx1{
-            width: 100%;
-            height: 500px;
-            background-color: rgb(233, 236, 238);
-            border:1px solid grey;
-            margin-top: 1%;
-            padding: 5%;
-        }
-        .photoprice{
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-        }
-        .sectionx1> .photoprice > div{
-            width: 40%;
-            margin: 1%;
-            height: 450px;
-            background-color: rgb(233, 236, 238);
-            display: flex;
-        }
-        .photoprice> div> img{
-            width: 100%;
-            height: 100%;
-            box-shadow: 2px 2px 2px 2px grey;
-        }
-        #info{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: start;
-            align-items: start;
-            padding: 4%;
-        }
-        #info> p , #info> h4{
-            margin: 1%;
-        }
-        .foroffer> span> button{
-            background-color: rgb(235, 177, 30);
-            padding: 1%;
-            font-size: larger;
-            width: 15em;
-            margin: 1%;
-            color: rgb(0, 0, 0);
-            border: 1px solid goldenrod;
-            border-radius: 10px;
-            box-shadow: 1px 2px 2px 1px rgb(153, 153, 86);
-        }
-        .foroffer> span> button:hover{
-            background-color: gold;
-        }
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(233, 236, 238);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: "Poppins";
+      }
 
-        .completeinfo{
-            width: 100%;
-            padding: 5%;
-            background-color: aliceblue;
-        }
-        .completeinfo> h4{
-            margin: 2% 2% 2% 0%;
-        }
-        .variants{
-            display: flex;
-        }
-        table{
-            margin: 1%;
-            width: 40%;
-            background-color: rgb(255, 255, 255);
-        }
-        .fueltype{
-            padding: 0.7%;
-            margin: 1%;
-            font-size: larger;
-        }
-        .fueltype:hover{
-            background-color: rgb(231, 179, 110);
-        }
-        th, td{
-            padding: 2%;
-            border: 1px solid grey;
-        }
+      /* section for subdivs for indivizual models for particular brand */
+      .sectionx1 {
+        width: 100%;
+        height: 500px;
+        background-color: rgb(233, 236, 238);
+        border: 1px solid grey;
+        margin-top: 1%;
+        padding: 5%;
+      }
+      .photoprice {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .sectionx1 > .photoprice > div {
+        width: 40%;
+        margin: 1%;
+        height: 450px;
+        background-color: rgb(233, 236, 238);
+        display: flex;
+      }
+      .photoprice > div > img {
+        width: 100%;
+        height: 100%;
+        box-shadow: 2px 2px 2px 2px grey;
+      }
+      #info {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-items: start;
+        padding: 4%;
+      }
+      #info > p,
+      #info > h4 {
+        margin: 1%;
+      }
+      .foroffer > span > button {
+        background-color: rgb(235, 177, 30);
+        padding: 1%;
+        font-size: larger;
+        width: 15em;
+        margin: 1%;
+        color: rgb(0, 0, 0);
+        border: 1px solid goldenrod;
+        border-radius: 10px;
+        box-shadow: 1px 2px 2px 1px rgb(153, 153, 86);
+      }
+      .foroffer > span > button:hover {
+        background-color: gold;
+      }
 
+      .completeinfo {
+        width: 100%;
+        padding: 1px;
+        background-color: aliceblue;
+      }
+      .completeinfo > h4 {
+        margin: 2% 2% 2% 0%;
+      }
+      .variants {
+        display: flex;
+      }
+      table {
+        margin: 1%;
+        width: 40%;
+        background-color: rgb(255, 255, 255);
+      }
+      .fueltype {
+        padding: 0.7%;
+        margin: 1%;
+        font-size: larger;
+      }
+      .fueltype:hover {
+        background-color: rgb(231, 179, 110);
+      }
+      th,
+      td {
+        padding: 2%;
+        border: 1px solid grey;
+      }
     </style>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
     <section id="section1">
-        <header>
-          
-            <span id="name"><h2>Pavan Vaishnav</h2></span>
-            <span id="menu">
-                <nav>
-                  <ul>
-                    <a href="index.html#bmw"><li id="bmwm"><img src="bmwlogo.png"></li></a>
-                    <a href="index.html#mercedes"><li id="merm"> <img src="merlogo.jpeg"> </li></a>
-                    <a href="index.html#rr"><li id="rrm"> <img src="rrlogo.jpeg"> </li></a>
-                    <a href="index.html#yamaha"><li id="yamaham"> <img src="yamahalogo.jpeg"> </li></a>
-                    <a href="index.html#suzuki"><li id="suzukim"> <img src="suzulogo.jpeg"> </li></a>                        
-                </ul>
-                </nav>
-                <nav>
-                  <ul>
-                    <!-- this is added for to add service  option for coustomer-->
-                     <li id="serviceid">&nbsp;&nbsp; <i class="bi bi-gear-fill"> <br> Service</i>
-                      <div class="form" id="formforservice">
-                        <h1 style="color:white; background-color:grey;" align="center">Register for Service</h1>
-                        <form>
-                            <div class="maindiv" id="personal">
-                                <!-- coustomer info -->
-                             <h4 style="margin-bottom: 10px;">Coustmer Information</h4>
-                             <div id="forname" class="ser">
-                                 <input type="text" name="fname" id="fnameid" placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; First name">
-                                 <input type="text" name="lname" id="lnameid" placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; Last name">
-                             </div>
-                             <div id="noemail" class="ser">
-                                 <input type="number" name="phno" id="phnoid" placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; Phone No.">
-                                 <input type="email" name="mail" id="mailid" placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; Email">
-                             </div>
-                             <div id="add" class="ser">
-                                 <textarea name="add" id="addid" cols="50" rows="5" placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; Address"></textarea>
-                             </div>
-                             <div id="reset">
-                                <input type="reset" value="Re-Fill">
-                             </div>
-                            </div>
-                
-                            <div class="maindiv" id="mainvehicle">
-                                <!-- vehicle info -->
-                             <h4>Vehicle Information</h4>
-                             <div id="vehicle" class="ser">
-                                 <input type="text" name="carname" id="carnameid" placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; Model Name">
-                                 <input type="number" name="carno" id="carnoid"  placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; Car No.">
-                             </div>
-                             <div id="todo" class="ser">
-                                 <textarea name="todoclass" id="todoid" cols="50" rows="5" placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; Add you modifications?"></textarea>
-                             </div>
-                             <div id="inout" class="ser">
-                                <div>
-                                    <label>Car Insert Date</label>
-                                    <input type="date" name="indate" id="indateid">
-                                </div>
-                                <div>
-                                    <label>Car Out Date</label>
-                                    <input type="date" name="outdate" id="outdateid">
-                                </div>
-                             </div>
-                             <div>
-                                <a href="index.html" class="btn"><button >Submit</button></a>
-                            </div>
-                            </div>
-                            
-                        </form>
+      <header>
+        <span id="name"><h2>Pavan Vaishnav</h2></span>
+        <span id="menu">
+          <nav>
+            <ul>
+              <a href="index.html#bmw"
+                ><li id="bmwm"><img src="bmwlogo.png" /></li
+              ></a>
+              <a href="index.html#mercedes"
+                ><li id="merm"><img src="merlogo.jpeg" /></li
+              ></a>
+              <a href="index.html#rr"
+                ><li id="rrm"><img src="rrlogo.jpeg" /></li
+              ></a>
+              <a href="index.html#yamaha"
+                ><li id="yamaham"><img src="yamahalogo.jpeg" /></li
+              ></a>
+              <a href="index.html#suzuki"
+                ><li id="suzukim"><img src="suzulogo.jpeg" /></li
+              ></a>
+            </ul>
+          </nav>
+          <nav>
+            <ul>
+              <!-- this is added for to add service  option for coustomer-->
+              <li id="serviceid">
+                &nbsp;&nbsp;
+                <i class="bi bi-gear-fill">
+                  <br />
+                  Service</i
+                >
+                <div class="form" id="formforservice">
+                  <h1
+                    style="color: white; background-color: grey"
+                    align="center"
+                  >
+                    Register for Service
+                  </h1>
+                  <form>
+                    <div class="maindiv" id="personal">
+                      <!-- coustomer info -->
+                      <h4 style="margin-bottom: 10px">Coustmer Information</h4>
+                      <div id="forname" class="ser">
+                        <input
+                          type="text"
+                          name="fname"
+                          id="fnameid"
+                          placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; First name"
+                        />
+                        <input
+                          type="text"
+                          name="lname"
+                          id="lnameid"
+                          placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; Last name"
+                        />
                       </div>
-                    
-                    </li>
-                  </ul>
-                </nav>
-                <nav id="nav2">
-                  <ul>
-                    <a href="#"> <li id="submenu" class="navv2"> &nbsp;&nbsp;<i class="bi bi-card-text">Menu</i> 
-                    <div class="detail" id="det">
-                      <ul id="wheeloption">
-                        <li id="two"><a>TWO <br> WHEELER</a>
-                          <div>
-                            <ul id="twowheelopt">
-                              <ul id="forbmwbikes">
-                                <li id="headtagfortwo">BMW</li>
-                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="bmwg3.html"> BMW G 310rr</a> </li>
-                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="bmwm1.html">  BMW M1000</a> </li>
-                              </ul>
-                              <ul id="foryamahabikes">
-                                <li id="headtagfortwo">YAMAHA</li>
-                                <li id="menufortwo"> <a href="aerox.html"> AEROX 155 </a> </li>
-                                <li id="menufortwo"> <a href="fzv3.html"> FZ V3 </a> </li>
-                                <li id="menufortwo"> <a href="yzfr1.html"> YZF R1 </a> </li>
-                                <li id="menufortwo"> <a href="mt15.html"> MT15 </a> </li>
-                                <li id="menufortwo"> <a href="fzx.html"> FZ X </a> </li>
-                                <li id="menufortwo"> <a href="rx100.html"> RX100 </a> </li>
-                              </ul>
-                              <ul id="forsuzukibikes">
-                                <li id="headtagfortwo">SUZUKI</li>
-                                <li id="menufortwo"> <a href="gixxer.html"> GIXXER </a> </li>
-                                <li id="menufortwo"> <a href="hayabusa.html"> HAYABUSA </a> </li>
-                                <li id="menufortwo"> <a href="access.html"> ACCESS 125 </a> </li>
-                                <li id="menufortwo"> <a href="gixxer250.html"> GIXXER 250 </a> </li>
-                                <li id="menufortwo"> <a href="gsx.html"> GSX-R1000R </a> </li>
-                                <li id="menufortwo"> <a href="avenis.html"> AVENIS </a> </li>
-                              </ul>
-                            </ul>
-                          </div>
-                        </li>
-
-                        <li id="two"><a>FOUR <br> WHEELER</a>
-                          <div>
-                            <ul id="twowheelopt">
-                              <ul id="forbmwcars">
-                              <li id="headtagfortwo" class="paddbmw padd">BMW</li>
-                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="bmwx1.html"> BMW X1</a> </li>
-                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="bmwx3.html"> BMW X3</a> </li>
-                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="bmwx5.html"> BMW X5</a> </li>
-                              </ul>
-                              <ul id="formercedescars">
-                                <li id="headtagfortwo" class="paddmer padd">MERCEDES</li>
-                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="merAMG.html"> BENZ AMG</a> </li>
-                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="sclass.html"> BENZ S-CLASS</a> </li>
-                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="sedan.html"> MAYBACH SEDAN</a> </li>
-                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="gls.html"> MAYBACH GLS</a> </li>
-                              </ul>
-                              <ul id="forrrcars">
-                                <li id="headtagfortwo" class="padd paddrr">ROLLS-ROYCE</li>
-                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="phantom.html"> PHANTOM </a> </li>
-                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="wraith.html"> WRAITH </a> </li>
-                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="ghost.html"> GHOST </a> </li>
-                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="cullinun.html"> CULLINUN </a> </li>
-                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="spectre.html"> SPECTRE </a> </li>
-                                <li id="menufortwo" class="bmwmenu" style="font-size: 1em;"> <a href="boattail.html"> BOAT-TAIL </a> </li>
-                              </ul>
-                            </ul>
-                          </div>
-                        </li>
-                      </ul>
+                      <div id="noemail" class="ser">
+                        <input
+                          type="number"
+                          name="phno"
+                          id="phnoid"
+                          placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; Phone No."
+                        />
+                        <input
+                          type="email"
+                          name="mail"
+                          id="mailid"
+                          placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; Email"
+                        />
+                      </div>
+                      <div id="add" class="ser">
+                        <textarea
+                          name="add"
+                          id="addid"
+                          cols="50"
+                          rows="5"
+                          placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; Address"
+                        ></textarea>
+                      </div>
+                      <div id="reset">
+                        <input type="reset" value="Re-Fill" />
+                      </div>
                     </div>
-                    </li></a>
-                    <a href="index.html"> <li id="Home" class="navv2"> &nbsp;&nbsp; <i class="bi bi-house-fill">Home</i> </li></a>
-                    <a href="login.html"> <li id="aboutus" class="navv2"> &nbsp;&nbsp; <i class="bi bi-person-video">Login</i> </li></a>
-                  </ul>
-                </nav>
-            </span>
-          </header>
-       </section><br>
+
+                    <div class="maindiv" id="mainvehicle">
+                      <!-- vehicle info -->
+                      <h4>Vehicle Information</h4>
+                      <div id="vehicle" class="ser">
+                        <input
+                          type="text"
+                          name="carname"
+                          id="carnameid"
+                          placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; Model Name"
+                        />
+                        <input
+                          type="number"
+                          name="carno"
+                          id="carnoid"
+                          placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; Car No."
+                        />
+                      </div>
+                      <div id="todo" class="ser">
+                        <textarea
+                          name="todoclass"
+                          id="todoid"
+                          cols="50"
+                          rows="5"
+                          placeholder=" &nbsp;&nbsp;&nbsp;&nbsp; Add you modifications?"
+                        ></textarea>
+                      </div>
+                      <div id="inout" class="ser">
+                        <div>
+                          <label>Car Insert Date</label>
+                          <input type="date" name="indate" id="indateid" />
+                        </div>
+                        <div>
+                          <label>Car Out Date</label>
+                          <input type="date" name="outdate" id="outdateid" />
+                        </div>
+                      </div>
+                      <div>
+                        <a href="index.html" class="btn"
+                          ><button>Submit</button></a
+                        >
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </li>
+            </ul>
+          </nav>
+          <nav id="nav2">
+            <ul>
+              <a href="#">
+                <li id="submenu" class="navv2">
+                  &nbsp;&nbsp;<i class="bi bi-card-text">Menu</i>
+                  <div class="detail" id="det">
+                    <ul id="wheeloption">
+                      <li id="two">
+                        <a
+                          >TWO <br />
+                          WHEELER</a
+                        >
+                        <div>
+                          <ul id="twowheelopt">
+                            <ul id="forbmwbikes">
+                              <li id="headtagfortwo">BMW</li>
+                              <li
+                                id="menufortwo"
+                                class="bmwmenu"
+                                style="font-size: 1em"
+                              >
+                                <a href="bmwg3.html"> BMW G 310rr</a>
+                              </li>
+                              <li
+                                id="menufortwo"
+                                class="bmwmenu"
+                                style="font-size: 1em"
+                              >
+                                <a href="bmwm1.html"> BMW M1000</a>
+                              </li>
+                            </ul>
+                            <ul id="foryamahabikes">
+                              <li id="headtagfortwo">YAMAHA</li>
+                              <li id="menufortwo">
+                                <a href="aerox.html"> AEROX 155 </a>
+                              </li>
+                              <li id="menufortwo">
+                                <a href="fzv3.html"> FZ V3 </a>
+                              </li>
+                              <li id="menufortwo">
+                                <a href="yzfr1.html"> YZF R1 </a>
+                              </li>
+                              <li id="menufortwo">
+                                <a href="mt15.html"> MT15 </a>
+                              </li>
+                              <li id="menufortwo">
+                                <a href="fzx.html"> FZ X </a>
+                              </li>
+                              <li id="menufortwo">
+                                <a href="rx100.html"> RX100 </a>
+                              </li>
+                            </ul>
+                            <ul id="forsuzukibikes">
+                              <li id="headtagfortwo">SUZUKI</li>
+                              <li id="menufortwo">
+                                <a href="gixxer.html"> GIXXER </a>
+                              </li>
+                              <li id="menufortwo">
+                                <a href="hayabusa.html"> HAYABUSA </a>
+                              </li>
+                              <li id="menufortwo">
+                                <a href="access.html"> ACCESS 125 </a>
+                              </li>
+                              <li id="menufortwo">
+                                <a href="gixxer250.html"> GIXXER 250 </a>
+                              </li>
+                              <li id="menufortwo">
+                                <a href="gsx.html"> GSX-R1000R </a>
+                              </li>
+                              <li id="menufortwo">
+                                <a href="avenis.html"> AVENIS </a>
+                              </li>
+                            </ul>
+                          </ul>
+                        </div>
+                      </li>
+
+                      <li id="two">
+                        <a
+                          >FOUR <br />
+                          WHEELER</a
+                        >
+                        <div>
+                          <ul id="twowheelopt">
+                            <ul id="forbmwcars">
+                              <li id="headtagfortwo" class="paddbmw padd">
+                                BMW
+                              </li>
+                              <li
+                                id="menufortwo"
+                                class="bmwmenu"
+                                style="font-size: 1em"
+                              >
+                                <a href="bmwx1.html"> BMW X1</a>
+                              </li>
+                              <li
+                                id="menufortwo"
+                                class="bmwmenu"
+                                style="font-size: 1em"
+                              >
+                                <a href="bmwx3.html"> BMW X3</a>
+                              </li>
+                              <li
+                                id="menufortwo"
+                                class="bmwmenu"
+                                style="font-size: 1em"
+                              >
+                                <a href="bmwx5.html"> BMW X5</a>
+                              </li>
+                            </ul>
+                            <ul id="formercedescars">
+                              <li id="headtagfortwo" class="paddmer padd">
+                                MERCEDES
+                              </li>
+                              <li
+                                id="menufortwo"
+                                class="bmwmenu"
+                                style="font-size: 1em"
+                              >
+                                <a href="merAMG.html"> BENZ AMG</a>
+                              </li>
+                              <li
+                                id="menufortwo"
+                                class="bmwmenu"
+                                style="font-size: 1em"
+                              >
+                                <a href="sclass.html"> BENZ S-CLASS</a>
+                              </li>
+                              <li
+                                id="menufortwo"
+                                class="bmwmenu"
+                                style="font-size: 1em"
+                              >
+                                <a href="sedan.html"> MAYBACH SEDAN</a>
+                              </li>
+                              <li
+                                id="menufortwo"
+                                class="bmwmenu"
+                                style="font-size: 1em"
+                              >
+                                <a href="gls.html"> MAYBACH GLS</a>
+                              </li>
+                            </ul>
+                            <ul id="forrrcars">
+                              <li id="headtagfortwo" class="padd paddrr">
+                                ROLLS-ROYCE
+                              </li>
+                              <li
+                                id="menufortwo"
+                                class="bmwmenu"
+                                style="font-size: 1em"
+                              >
+                                <a href="phantom.html"> PHANTOM </a>
+                              </li>
+                              <li
+                                id="menufortwo"
+                                class="bmwmenu"
+                                style="font-size: 1em"
+                              >
+                                <a href="wraith.html"> WRAITH </a>
+                              </li>
+                              <li
+                                id="menufortwo"
+                                class="bmwmenu"
+                                style="font-size: 1em"
+                              >
+                                <a href="ghost.html"> GHOST </a>
+                              </li>
+                              <li
+                                id="menufortwo"
+                                class="bmwmenu"
+                                style="font-size: 1em"
+                              >
+                                <a href="cullinun.html"> CULLINUN </a>
+                              </li>
+                              <li
+                                id="menufortwo"
+                                class="bmwmenu"
+                                style="font-size: 1em"
+                              >
+                                <a href="spectre.html"> SPECTRE </a>
+                              </li>
+                              <li
+                                id="menufortwo"
+                                class="bmwmenu"
+                                style="font-size: 1em"
+                              >
+                                <a href="boattail.html"> BOAT-TAIL </a>
+                              </li>
+                            </ul>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </li></a
+              >
+              <a href="index.html">
+                <li id="Home" class="navv2">
+                  &nbsp;&nbsp; <i class="bi bi-house-fill">Home</i>
+                </li></a
+              >
+              <a href="login.html">
+                <li id="aboutus" class="navv2">
+                  &nbsp;&nbsp; <i class="bi bi-person-video">Login</i>
+                </li></a
+              >
+            </ul>
+          </nav>
+        </span>
+      </header>
+    </section>
+    <br />
 
     <!-- indivizual section for only bmw cars  -->
-     <!-- this section for bmw x1 -->
+    <!-- this section for bmw x1 -->
     <section class="sectionx1" id="sectionforx1">
-        <div class="photoprice">
-            <div class="images">
-                <div id="imgdiv"><img src="spectre1.jpeg">    <img src="spectre2.jpeg"></div>
-                <div id="imgdiv"><img src="spectre3.jpeg">    <img src="spectre4.jpeg"></div>   
-            </div> 
-            <div id="info">
-                <h4>RR Spectre</h4>
-                <p> The Rolls-Royce Spectre is a full-sized luxury electric grand tourer manufactured by Rolls-Royce Motor Cars. The Spectre was formally launched at Napa Valley, California in 2023. [ 3 ][ 4 ] The first deliveries of the car were made in the last quarter of 2023.</p>
-                <h4>Rs 7.50 crore</h4>
-                <p>Ex-showroom price, India</p>
-                <br>
-                <p>Avg, Waiting Period Upto 40 Weeks</p>
-                <div class="foroffer">
-                    <span><button>Get Diwali Offers</button></span>
-                    <span><button>Get EMI Offers</button></span>
-                    <span><button>View more</button></span>
-                </div>
+      <div class="photoprice">
+        <div class="images">
+          <div id="imgdiv">
+            <img src="spectre1.jpeg" /> <img src="spectre2.jpeg" />
+          </div>
+          <div id="imgdiv">
+            <img src="spectre3.jpeg" /> <img src="spectre4.jpeg" />
+          </div>
+        </div>
+        <div id="info">
+          <h4>RR Spectre</h4>
+          <p>
+            The Rolls-Royce Spectre is a full-sized luxury electric grand tourer
+            manufactured by Rolls-Royce Motor Cars. The Spectre was formally
+            launched at Napa Valley, California in 2023. [ 3 ][ 4 ] The first
+            deliveries of the car were made in the last quarter of 2023.
+          </p>
+          <h4>Rs 7.50 crore</h4>
+          <p>Ex-showroom price, India</p>
+          <br />
+          <p>Avg, Waiting Period Upto 40 Weeks</p>
+          <div class="foroffer">
+            <span><button>Get Diwali Offers</button></span>
+            <span><button>Get EMI Offers</button></span>
+            <span><button>View more</button></span>
+          </div>
+        </div>
+      </div>
+      <div class="completeinfo">
+        <h4>RR Spectre</h4>
+        <p>
+          The Rolls-Royce Spectre is the brand's first fully electric luxury
+          coupe, blending iconic design with cutting-edge technology. The
+          Spectre is powered by a dual-motor setup, generating around 577
+          horsepower and 900 Nm of torque. It features a large 102 kWh battery,
+          enabling an estimated range of approximately 520 kilometers (around
+          323 miles) on a full charge.
+        </p>
+        <div class="fuel">
+          <button class="fueltype">Petrol</button>
+          <!-- <button class="fueltype">Diesel</button> -->
+        </div>
+        <div class="variants">
+          <table>
+            <tr>
+              <th>Variants</th>
+              <th>Ex-showroom Price</th>
+            </tr>
+            <tr>
+              <td>Rolls-Royce Spectre</td>
+              <td style="font-weight: 700">₹6.5 crore*</td>
+            </tr>
+          </table>
+          <table class="tableinfo" border="1">
+            <tr>
+              <th>Form</th>
+              <th>Specification</th>
+            </tr>
+            <tr>
+              <td>Seating capacity</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>Body type</td>
+              <td>Sedan EV</td>
+            </tr>
+            <tr>
+              <td>Interior</td>
+              <td>
+                Starlight Headline, Bespoke Design, Luxury Materials, Rear Seat
+                Comfort, Noise Insulation.
+              </td>
+            </tr>
+            <tr>
+              <td>Digital features</td>
+              <td>Smartphone integration, Apple CarPlay and Android Auto</td>
+            </tr>
+            <tr>
+              <td>Driver assistance systems</td>
+              <td>
+                Lane departure warning, active, feedback, front collision
+                warning with brake intervention
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+    <br />
 
-            </div>
+    <!-- footer  -->
+    <section id="footer" style="position: absolute; top: 1530px">
+      <div class="firstfoot">
+        <div>
+          <span><i class="bi bi-award"></i></span>
+          <h4>India's #1</h4>
+          <p>Best Auto</p>
         </div>
-        <div class="completeinfo">
-            <h4>RR Spectre</h4>
-            <p>The Rolls-Royce Spectre is the brand's first fully electric luxury coupe, blending iconic design with cutting-edge technology. 
-                The Spectre is powered by a dual-motor setup, generating around 577 horsepower and 900 Nm of torque.
-                It features a large 102 kWh battery, enabling an estimated range of approximately 520 kilometers (around 323 miles) on a full charge.</p>
-            <div class="fuel">
-                <button class="fueltype">Petrol</button>
-                <!-- <button class="fueltype">Diesel</button> -->
-            </div>
-            <div class="variants">
-                <table>
-                    <tr>
-                        <th>Variants</th>
-                        <th>Ex-showroom Price</th>
-                    </tr>
-                    <tr>
-                        <td>Rolls-Royce Spectre</td>
-                        <td style="font-weight: 700;"> ₹6.5 crore*</td>
-                    </tr>
-                </table>
-                <table class="tableinfo" border="1" >
-                    <tr>
-                        <th>Form</th>
-                        <th>Specification</th>
-                    </tr>
-                    <tr>
-                        <td>Seating capacity</td>
-                        <td>4</td>
-                    </tr>
-                    <tr>
-                        <td>Body type</td>
-                        <td>Sedan EV</td>
-                    </tr>
-                    <tr>
-                        <td>Interior</td>
-                        <td>Starlight Headline, Bespoke Design, Luxury Materials, Rear Seat Comfort, Noise Insulation.</td>
-                    </tr>
-                    <tr>
-                        <td>Digital features</td>
-                        <td>Smartphone integration, Apple CarPlay and Android Auto</td>
-                    </tr>
-                    <tr>
-                        <td>Driver assistance systems</td>
-                        <td>Lane departure warning, active, feedback, front collision warning with brake intervention</td>
-                    </tr>
-                </table> 
-            </div>
+        <div>
+          <span><i class="bi bi-receipt"></i></span>
+          <h4>Being Sold</h4>
+          <p>Every 4 min</p>
         </div>
-    </section> <br>
-    
-     <!-- footer  -->
-    <section id="footer" style="position: absolute; top:1530px;">
-        <div class="firstfoot">
-          <div> <span><i class="bi bi-award"></i></span>  <h4>India's #1</h4>  <p>Best Auto</p></div>
-          <div> <span><i class="bi bi-receipt"></i></span>  <h4>Being Sold</h4>  <p>Every 4 min</p></div>
-          <div> <span><i class="bi bi-tags"></i></span>  <h4>Offers</h4>  <p>Stay updated</p></div>
-          <div> <span><i class="bi bi-car-front"></i></span>  <h4>Compare</h4>  <p>Decode car</p></div>
+        <div>
+          <span><i class="bi bi-tags"></i></span>
+          <h4>Offers</h4>
+          <p>Stay updated</p>
         </div>
+        <div>
+          <span><i class="bi bi-car-front"></i></span>
+          <h4>Compare</h4>
+          <p>Decode car</p>
+        </div>
+      </div>
 
-        <div class="secondfoot">
-          <div class="footlist">
-            <ul>
-              <li><a href="#"><h5>About Website</h5></a></li>
-              <li><a href="#">Career with us</a></li>
-              <li><a href="#">Privacy & Policy</a></li>
-              <li><a href="#">FAQS</a></li>
-            </ul>
-          </div>
-          <div class="footlist">
-            <ul>
-              <li><a href="#"><h5>Connect</h5></a></li>
-              <li><a href="#">Feedback</a></li>
-              <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Advertise</a></li>
-              <li><a href="#">Become Partner</a></li>
-            </ul>
-          </div>
-          <div class="footlist">
-            <ul>
-              <li><a href="#"> <h5>Others</h5></a></li>
-              <li><a href="#">Truck</a></li>
-              <li><a href="#">Tractor</a></li>
-              <li><a href="#">Emergency</a></li>
-              <li><a href="#">Trends</a></li>
-            </ul>
-          </div>
-          <div class="footlist" id="exp">
-            <h5>Experience on</h5>
-            <div id="expfirstid">
-              <a> <img src="appstore.png"></a>
-              <a> <img src="playstore.png"></a>
-            </div>
+      <div class="secondfoot">
+        <div class="footlist">
+          <ul>
+            <li>
+              <a href="#"><h5>About Website</h5></a>
+            </li>
+            <li><a href="#">Career with us</a></li>
+            <li><a href="#">Privacy & Policy</a></li>
+            <li><a href="#">FAQS</a></li>
+          </ul>
+        </div>
+        <div class="footlist">
+          <ul>
+            <li>
+              <a href="#"><h5>Connect</h5></a>
+            </li>
+            <li><a href="#">Feedback</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Advertise</a></li>
+            <li><a href="#">Become Partner</a></li>
+          </ul>
+        </div>
+        <div class="footlist">
+          <ul>
+            <li>
+              <a href="#"> <h5>Others</h5></a>
+            </li>
+            <li><a href="#">Truck</a></li>
+            <li><a href="#">Tractor</a></li>
+            <li><a href="#">Emergency</a></li>
+            <li><a href="#">Trends</a></li>
+          </ul>
+        </div>
+        <div class="footlist" id="exp">
+          <h5>Experience on</h5>
+          <div id="expfirstid">
+            <a> <img src="appstore.png" /></a>
+            <a> <img src="playstore.png" /></a>
           </div>
         </div>
-        <div class="footlast">
-          <div> <i class="bi bi-cc-circle-fill"></i>  Copyright VORTEX 2024</div>
-          <div>Connect :  &nbsp;  <a><i class="bi bi-facebook" style="color: blue;"></i></a> &nbsp;&nbsp;&nbsp; <a> <i class="bi bi-linkedin" style="color: rgb(10, 111, 243);"></i></a> &nbsp;&nbsp;&nbsp; <a> <i class="bi bi-twitter" style="color: rgb(3, 110, 172);"></i></a> &nbsp;&nbsp;&nbsp;  </div>
+      </div>
+      <div class="footlast">
+        <div><i class="bi bi-cc-circle-fill"></i> Copyright VORTEX 2024</div>
+        <div>
+          Connect : &nbsp;
+          <a><i class="bi bi-facebook" style="color: blue"></i></a>
+          &nbsp;&nbsp;&nbsp;
+          <a>
+            <i class="bi bi-linkedin" style="color: rgb(10, 111, 243)"></i
+          ></a>
+          &nbsp;&nbsp;&nbsp;
+          <a> <i class="bi bi-twitter" style="color: rgb(3, 110, 172)"></i></a>
+          &nbsp;&nbsp;&nbsp;
         </div>
-       </section>  
+      </div>
+    </section>
   </body>
-  </html>
+</html>
